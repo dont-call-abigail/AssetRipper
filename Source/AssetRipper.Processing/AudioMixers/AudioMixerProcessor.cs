@@ -1,5 +1,6 @@
 ﻿using AssetRipper.Assets.Collections;
 using AssetRipper.Assets.Generics;
+using AssetRipper.Assets.Metadata;
 using AssetRipper.Checksum;
 using AssetRipper.Import.Logging;
 using AssetRipper.SourceGenerated.Classes.ClassID_240;
@@ -176,7 +177,7 @@ public sealed class AudioMixerProcessor : IAssetProcessor
 			{
 				IAudioMixerEffectController effect = virtualFile.CreateAudioMixerEffectController();
 				effect.HideFlagsE = HideFlags.HideInHierarchy | HideFlags.HideInInspector;
-				effect.EffectID.CopyValues(UnityGuid.NewGuid());
+				effect.EffectID.CopyValues(DeterministicUnityGuid.New());
 				effect.EffectName = "Attenuation";
 				effect.MainAsset = mixer;
 

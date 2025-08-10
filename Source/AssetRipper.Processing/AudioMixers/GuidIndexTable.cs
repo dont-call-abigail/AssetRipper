@@ -1,4 +1,5 @@
-﻿using AssetRipper.Import.Logging;
+﻿using AssetRipper.Assets.Metadata;
+using AssetRipper.Import.Logging;
 
 namespace AssetRipper.Processing.AudioMixers;
 
@@ -24,7 +25,7 @@ internal readonly struct GuidIndexTable
 		}
 		else
 		{
-			guid = UnityGuid.NewGuid();
+			guid = DeterministicUnityGuid.New();
 			table.Add(index, guid);
 		}
 		return guid;

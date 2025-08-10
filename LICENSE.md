@@ -1,3 +1,8 @@
+This fork, dont-call-abigail/AssetRipper, modifies the original version of the Program. It includes a modified version of
+AssetRipper.Primitives which generates deterministic Unity GUIDs. It is distributed under the same
+license as the original Program, provided below.
+
+
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 

@@ -1,5 +1,6 @@
 using AssetRipper.Assets;
 using AssetRipper.Assets.Collections;
+using AssetRipper.Assets.Metadata;
 using AssetRipper.SourceGenerated.Classes.ClassID_1034;
 
 namespace AssetRipper.Export.UnityProjects;
@@ -75,7 +76,7 @@ public class AssetExportCollection<T> : ExportCollection where T : IUnityObjectB
 		return importer;
 	}
 
-	public override UnityGuid GUID { get; } = UnityGuid.NewGuid();
+	public override UnityGuid GUID { get; } = DeterministicUnityGuid.New();
 	public override IAssetExporter AssetExporter { get; }
 	public override AssetCollection File => Asset.Collection;
 	public override IEnumerable<IUnityObjectBase> Assets

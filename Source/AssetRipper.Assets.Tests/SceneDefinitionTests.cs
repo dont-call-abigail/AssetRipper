@@ -1,5 +1,6 @@
 using AssetRipper.Assets.Bundles;
 using AssetRipper.Assets.Collections;
+using AssetRipper.Assets.Metadata;
 using AssetRipper.Primitives;
 
 namespace AssetRipper.Assets.Tests;
@@ -100,6 +101,6 @@ public class SceneDefinitionTests
 	private static AssetCollection CreateCollection()
 	{
 		GameBundle gameBundle = new();
-		return gameBundle.AddNewProcessedCollection(UnityGuid.NewGuid().ToString(), UnityVersion.MinVersion);
+		return gameBundle.AddNewProcessedCollection(DeterministicUnityGuid.New().ToString(), UnityVersion.MinVersion);
 	}
 }
