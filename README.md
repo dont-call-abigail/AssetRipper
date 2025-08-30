@@ -2,7 +2,7 @@
 This fork includes some enhancements for the Disco Elysium Modding API. Changes include:
 - Seeded Unity asset GUID generation for consistency across user installs
 
-It is currently at parity with AssetRipper version `1.3.1` 
+It is currently at parity with AssetRipper version `1.3.2` 
 
 To publish this project, simply install .NET SDK 9.0 and run `dotnet publish -c Release --os <win/linux>`.
 Native AOT in this project requires that you compile for each OS using that target OS. See [MSDN](https://learn.microsoft.com/en-us/dotnet/core/deploying/native-aot/cross-compile).
