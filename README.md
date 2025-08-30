@@ -6,7 +6,8 @@ It is currently at parity with AssetRipper version `1.3.1`
 
 To publish this project, simply install .NET SDK 9.0 and run `dotnet publish -c Release --os <win/linux>`.
 Native AOT in this project requires that you compile for each OS using that target OS. See [MSDN](https://learn.microsoft.com/en-us/dotnet/core/deploying/native-aot/cross-compile).
-Generated binaries are placed in `Source/0Bin/AssetRipper.GUI.Free/`.
+Generated binaries are placed in `Source/0Bin/AssetRipper.GUI.Free/<os>/publish`. 
+Include `capstone.dll`, `crunch.dll`, `crunchunity.dll`, and `Texture2DDecoderNative.dll` in your releases.
 
 
 # AssetRipper
